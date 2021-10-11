@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/form-voluntario.css">
+    <link rel="shortcut icon" href="imagens/africa.png">
+    <title>Voluntariar-se</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="barra-menu">
+    <label for="barra-menu" class="barra-menu">&#9776;</label>
+    <label class="nomenocell">Roupa Até África</label>
+
+    <header>
+
+        <nav class="nav-container">
+            <ul>
+                <li>
+                    <img src="imagens/africa.png" class="logo">
+                </li>
+            </ul>
+
+            <ul class="item-container">
+                <li><a href="nav.html">Início</a></li>
+                <li><a href="nav.html">Quem somos</a></li>
+                <li><a href="nav.html">Apadrinhamento</a></li>
+                <li><a href="nav.html">Voluntariado</a></li>
+                <li><a href="nav.html">Fotos</a></li>
+            </ul>
+            <span class="nome">Roupa Até África</span>
+        </nav>
+    </header>
+    <!--   Principal   -->
+    <main>
+        <form>
+
+            <!--   Fielset Seja um Voluntário   -->
+
+            <div class="forms">
+                <!--   Título Semântico   -->
+                <div class="form1">
+                    <label class="titulo1">Seja um Voluntário</label>
+
+
+                    <!--   Fielset Informações Pessoais   -->
+
+
+
+                    <!--   Inputs dentro das tabelas   -->
+
+
+                    <!--   Input Nome   -->
+
+                    <label class="texto">Nome:</label>
+
+                    <input type="text" placeholder="Digite seu Nome Completo">
+
+
+                    <!--   Input Email   -->
+
+                    <label class="texto">E-mail:</label>
+
+                    <input type="email" placeholder="nome@email.com">
+
+
+                    <!--   Input Telefone   -->
+
+                    <label class="texto">Telefone:</label>
+
+                    <input type="number" placeholder="(__) _____-____">
+
+
+                    <!--   Input CPF   -->
+
+                    <label class="texto">CPF:</label>
+
+                    <input type="number" placeholder="___.___.___-___">
+
+
+                    <!--   Input Redes Sociais   -->
+
+
+                    <label class="texto">Redes Socias:</label>
+
+
+
+                    <!--   Select das Redes Sociais   -->
+                    <select>
+                        <option>Facebook</option>
+                        <option>Instagran</option>
+                        <option>Twitter</option>
+                        <option>LinkedIn</option>
+                    </select>
+
+
+
+
+                    <!--   Linka para a Rede Social   -->
+                    <input type="text" placeholder="Link da sua Rede Social">
+
+
+                    <!--   Tabela Situação Civil ainda dentro do Fielset Informações pessoais   -->
+
+                </div>
+                <div class="container-2">
+                    <!--   Situação civil com RadioBox   -->
+                    <br>
+                    <br>
+                    <label class="texto">Situação Civil:</label>
+
+                    <input type="radio" id="radio" name="civil">
+                    <label for="radio">Solteiro</label>
+
+                    <input type="radio" id="radio2" name="civil">
+                    <label for="radio2">Casado</label>
+
+                    <input type="radio" id="radio3" name="civil">
+                    <label for="radio3">União Estável</label>
+
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                <div class="form2">
+
+                    <label id="titulo2">Informações profissionais</label>
+                    <br>
+                    <br>
+                    <!--   Tabela com Inputs e Select   -->
+
+                    <label>Qual sua Profissão:</label>
+
+                    <input type="text" placeholder="Digite sua Profissão" class="proficao">
+                    <div class="statusproficao">
+                        <br>
+                        <label>Não tem Porfissão ?</label>
+                        <input type="radio" id="profissao">
+                        <label for="profissao">Sim</label>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <label>Renda Mensal:</label>
+
+                    <select>
+                        <option>Abaixo de R$1000</option>
+                        <option>R$1000 até R$5000</option>
+                        <option>R$5000 até R$10000</option>
+                        <option>Acima de R$10000</option>
+                    </select>
+
+
+
+
+
+                    <!--   Fielset Conte-nos Sobre Você com Textarea   -->
+                    <div class="textarea">
+                        <label>Conte-nos Sobre Você</label>
+                        <textarea placeholder="Fale sobre você"></textarea>
+                    </div>
+
+
+                    <!--   Botão Cadastrar e Limpar   -->
+
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <address>Rua Rio Claro Lt26 Qd49, São João de Meriti, RJ, BRASIL - CEP: 2550607</address>
+        <p id="copy">&copy; 2021 www.missaoafrica.org.br</p>
+    </footer>
+    
+</body>
+
+</html>

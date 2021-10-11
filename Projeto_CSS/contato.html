@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/africa.png">
+    <link rel="stylesheet" href="estilo/contato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="barra-menu">
+    <label for="barra-menu" class="barra-menu">&#9776;</label>
+    <label class="nomenocell">Roupa Até África</label>
+
+    <header>
+
+        <nav class="nav-container">
+            <ul>
+                <li>
+                    <img src="imagens/africa.png" class="logo">
+                </li>
+            </ul>
+
+            <ul class="item-container">
+                <li><a href="nav.html">Início</a></li>
+                <li><a href="nav.html">Quem somos</a></li>
+                <li><a href="nav.html">Apadrinhamento</a></li>
+                <li><a href="nav.html">Voluntariado</a></li>
+                <li><a href="nav.html">Fotos</a></li>
+            </ul>
+            <span class="nome">Roupa Até África</span>
+        </nav>
+    </header>
+
+    <!--   Principal   -->
+    <main>
+        <form>
+            <!--   Input e Select com option dentro da tabela, são elas Nome, Email, Telefone, Motivo do contato.   -->
+            <div class="content-form">
+                <label id="titulo">Contato</label>
+                <br>
+                <br>
+                <label>Nome:</label>
+
+                <input type="text" placeholder="Digite seu Nome Completo">
+
+                <label>E-mail:</label>
+
+                <input type="email" placeholder="nome@email.com">
+
+                <label>Telefone:</label>
+
+                <input type="number" placeholder="(__) _____-____">
+
+
+                <br />
+                <label>Motivo do contato:</label>
+
+                <br />
+
+                <select>
+                    <option>Voluntariado</option>
+                    <option>Doação</option>
+                    <option>Apadrinhamento</option>
+                </select>
+
+
+                <br />
+
+
+                <!--   Fieldset mensagem dentro da Fieldset   -->
+
+
+                <!--   Textarea para mensagem   -->
+                <div class="textarea">
+                    <label>Conte-nos</label>
+                    <textarea placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <br />
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+
+
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <address>Rua Rio Claro Lt26 Qd49, São João de Meriti, RJ, BRASIL - CEP: 2550607</address>
+        <p id="copy">&copy; 2021 www.missaoafrica.org.br</p>
+    </footer>
+
+</body>
+
+</html>
