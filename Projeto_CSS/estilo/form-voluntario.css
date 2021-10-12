@@ -143,12 +143,11 @@ body {
     flex-direction: column;
     position: relative;
     top: 0vh;
-    left: -17vh;
+    left: -13vh;
   }
   .item-container li {
     padding-top: 2vh;
     width: 300%;
-    font-size: 1rem;;
   }
   .barra-menu {
     display: -webkit-box;
@@ -604,20 +603,39 @@ footer {
   }
   .forms {
     width: 465px;
-    height: 1570px;
+    height: 1860px;
   }
   .form1 input, select {
     margin-left: 4.5rem;
+    margin-bottom: 3rem;
   }
   .form2 input.proficao {
     margin-left: 4.5rem;
   }
-  textarea {
-    margin-right: 2.3rem;
+  #titulo2 {
+    margin-left: -3rem;
+  }
+  #sit-civil {
+    display: block;
+    text-align: center;
+    margin-left: -3rem;
+    font-size: 2rem;
+  }
+  .container-2 input {
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+  }
+  .container-2 label {
+    font-size: 1.1rem;
+  }
+  #contenos {
+    margin-left: -2.5rem;
+    margin-top: 3rem;
   }
   .textarea textarea {
-    width: 24rem;
-    margin-left: 2.5rem;
+    width: 21rem;
+    margin-left: 0.2rem;
+    margin-top: 2rem;
   }
   button {
     margin-left: 10rem;
@@ -638,6 +656,46 @@ footer {
   }
   #copy {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .forms {
+    width: 364px;
+    height: 117rem;
+  }
+  .form1 input, select {
+    margin-left: 1.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .texto {
+    padding-left: 2rem;
+  }
+  #sit-civil {
+    display: block;
+    text-align: center;
+    margin-left: -3rem;
+  }
+  .form2 input.proficao {
+    margin-left: 1.5rem;
+  }
+  .container-2 input {
+    margin-top: 2rem;
+  }
+  #titulo2 {
+    margin-left: -3rem;
+    margin-top: 1rem;
+  }
+  #contenos {
+    margin-left: -3rem;
+  }
+  .textarea textarea {
+    width: 21rem;
+    margin-left: 0.2rem;
+  }
+  button {
+    margin-left: 7rem;
   }
 }
 /*# sourceMappingURL=form-voluntario.css.map */

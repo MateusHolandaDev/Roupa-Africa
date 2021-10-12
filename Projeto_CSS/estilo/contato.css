@@ -151,7 +151,7 @@ header {
     flex-direction: column;
     position: relative;
     top: 0vh;
-    left: -17vh;
+    left: -13vh;
   }
   .item-container li {
     padding-top: 2vh;
@@ -406,6 +406,28 @@ footer {
   }
   #copy {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content-form {
+    width: 364px;
+    height: 71rem;
+  }
+  .content-form input, select {
+    margin-left: 1.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .textarea label {
+    margin-left: 5rem;
+  }
+  .textarea textarea {
+    width: 21rem;
+    margin-left: 0.9rem;
+  }
+  button {
+    margin-left: 7rem;
   }
 }
 /*# sourceMappingURL=contato.css.map */
