@@ -1,0 +1,411 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*header com menu dentro*/
+/*Posição fixa*/
+header {
+  width: 100%;
+  height: 9vh;
+  background-color: #990404;
+  position: absolute;
+}
+
+/*Imagem logo menu*/
+.logo {
+  width: 11.50%;
+  margin-top: 1%;
+}
+
+/*Container menu*/
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  justify-items: center;
+}
+
+/*Item container menu*/
+.item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: -5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 105%;
+  letter-spacing: 1px;
+}
+
+/*Item container menu lista*/
+.item-container li {
+  padding-left: 50px;
+}
+
+/*Item container menu lista tag a*/
+.item-container li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Nome ONG menu*/
+.nome {
+  position: relative;
+  top: 1rem;
+  left: -68.70rem;
+  font-size: 1.50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#feca57));
+  background-image: linear-gradient(to right, #feca57);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Nome da ONG utilizando @Media*/
+.nomenocell {
+  position: absolute;
+  top: 0.5rem;
+  left: 11.3rem;
+  font-size: 1.50rem;
+  display: none;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(#feca57));
+  background-image: linear-gradient(to right, #feca57);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item-container li a:hover {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+/*Checkbox barra*/
+#barra-menu {
+  display: none;
+}
+
+/*Barra menu*/
+.barra-menu {
+  background-color: #990404;
+  color: white;
+  font-size: 2.3rem;
+  cursor: pointer;
+  padding-bottom: 2px;
+  display: none;
+}
+
+/*Media para responsividade*/
+@media screen and (max-width: 1342px) {
+  .item-container {
+    font-size: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    top: 0vh;
+    left: -17vh;
+  }
+  .item-container li {
+    padding-top: 2vh;
+    width: 300%;
+    font-size: 1rem;
+  }
+  .barra-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: -2.7rem;
+    left: 28rem;
+  }
+  .nomenocell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #barra-menu:checked ~ header {
+    margin-left: 0;
+  }
+  header {
+    width: 100%;
+    height: 27vh;
+    margin-left: -104%;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+  }
+}
+
+@media (max-width: 496px) {
+  .item-container li {
+    width: 200%;
+    position: relative;
+    left: 10rem;
+  }
+  .nomenocell {
+    position: absolute;
+    left: 6.2rem;
+  }
+  .logo {
+    width: 2rem;
+    position: absolute;
+    left: 19rem;
+    top: -3rem;
+  }
+}
+
+@media (max-height: 570px) {
+  .item-container {
+    position: relative;
+    top: -0.1rem;
+  }
+  .logo {
+    position: absolute;
+    left: 1rem;
+  }
+}
+
+/*formulário*/
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10rem;
+  color: white;
+}
+
+/*Container formulário*/
+.content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #990404;
+  border-radius: 2rem;
+  width: 40rem;
+  height: 63rem;
+}
+
+/*content form*/
+.content-form label {
+  font-size: 1.3rem;
+  padding-top: 0.6rem;
+  padding-left: 3rem;
+}
+
+/*content form os input e selec*/
+.content-form input, select {
+  margin: 1rem;
+  margin-left: 10rem;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #fccc2c;
+  text-align: center;
+}
+
+/*placeholder do input*/
+input::-webkit-input-placeholder {
+  text-align: center;
+}
+input:-ms-input-placeholder {
+  text-align: center;
+}
+input::-ms-input-placeholder {
+  text-align: center;
+}
+input::placeholder {
+  text-align: center;
+}
+
+/*placeholder do select*/
+select::-webkit-input-placeholder {
+  text-align: center;
+}
+select:-ms-input-placeholder {
+  text-align: center;
+}
+select::-ms-input-placeholder {
+  text-align: center;
+}
+select::placeholder {
+  text-align: center;
+}
+
+/*titulo do form*/
+#titulo {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: -1.5rem;
+  text-align: center;
+}
+
+/*classe textarea do textarea*/
+.textarea textarea {
+  width: 30rem;
+  height: 12rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+/*placeholder do textarea*/
+textarea::-webkit-input-placeholder {
+  text-align: center;
+  padding-top: 5rem;
+}
+textarea:-ms-input-placeholder {
+  text-align: center;
+  padding-top: 5rem;
+}
+textarea::-ms-input-placeholder {
+  text-align: center;
+  padding-top: 5rem;
+}
+textarea::placeholder {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+/*botãos*/
+button {
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 15rem;
+  width: 9rem;
+  height: 2.6rem;
+  background-color: #fccc2c;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+/*botãos usando hover, focus e active para efeitos de animações*/
+button:hover, button:focus, button:active {
+  height: 3rem;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 0px 0px 5px 5px orangered;
+          box-shadow: 0px 0px 5px 5px orangered;
+}
+
+/*footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #fbf06f;
+  margin-top: 5rem;
+}
+
+/* copyright*/
+#copy {
+  width: 35%;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  form {
+    padding-top: 12rem;
+  }
+  .content-form {
+    width: 465px;
+  }
+  .content-form input, select {
+    margin-left: 4.5rem;
+  }
+  .textarea textarea {
+    width: 24rem;
+    margin-left: 2.5rem;
+  }
+  button {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  footer address {
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer {
+    height: 130px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #copy {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=contato.css.map */
